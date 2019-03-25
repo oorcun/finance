@@ -60,7 +60,7 @@ class StockController extends Controller
         if (env("OS") == "windows") {
             pclose(popen("cd .. && start /B php artisan stock:get", "r"));
         } else {
-            exec("cd .. && php artisan stock:get > &1");
+            exec("cd .. && php artisan stock:get > /dev/null &");
         }
     }
 
