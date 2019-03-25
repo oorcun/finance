@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-    <link href="{{ auth()->check() ? auth()->user()->getThemePath() : 'css/app.css' }}" rel="stylesheet">
+    <link href="{{ auth()->check() ? auth()->user()->getThemePath() : asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
